@@ -435,8 +435,6 @@ function drawLibrary(c, changed) {
   roundRect(c, 138, 344, 48, 22, 6, '#ffd54a');
 }
 
-const NONE = new Set();
-
 export const LEVELS = [
   {
     name: 'Level 1 · Sunny Garden',
@@ -485,5 +483,3 @@ export const LEVELS = [
 export function changedSet(level) {
   return new Set(level.diffs.map((d) => d.id));
 }
-
-export { NONE };
